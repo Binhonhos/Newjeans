@@ -1,0 +1,99 @@
+* {
+  margin: 0x;
+  padding: 5px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Times New Roman", Times, serif;
+  background: linear-gradient(to bottom, #ffffff, #6dd5fa, #2980b9);
+  font-size: 1, 3em;
+}
+
+img {
+  width: 500px;
+  height: 500px;
+  margin: 40px;
+  padding: 40px;
+  box-sizing: border-box;
+}
+
+h1 {
+  margin: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+h3 {
+  font-weight: bold;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2em;
+}
+.container {
+  max-width: 1100px;
+  margin: auto;
+}
+.card {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2em;
+  background-color: #2726263f;
+}
+
+.card div {
+  padding: 2em;
+}
+
+.card:nth-child(even) img {
+  order: 2;
+}
+
+.btn {
+  background-color: rgb(72, 70, 68);
+  color: #ffffff;
+  padding: 10px 15px;
+  display: inline-block;
+  border-radius: 10px;
+  margin-top: 2em;
+  cursor: pointer;
+  transition: background-color 1s ease;
+}
+
+a {
+  text-decoration: none;
+}
+
+.btn:hover {
+  background-color: black;
+  color: #2980b9;
+  box-shadow: 1px 1px 2px #000000;
+}
+
+.galeria {
+  margin: 2em;
+  display: flex;
+  height: 20em;
+  gap: 0.5em;
+}
+
+.galeria div {
+  flex: 1;
+  background-size: cover;
+  background-position: top center;
+}
+
+.galeria div:hover {
+  flex: 3;
+  transition: all 50ms cubic-bezier(0.97, 0.08, 0.97, 0.34);
+  box-shadow: 15px 15px 15px;
+}
+
+.galeria:hover div:not(:hover) {
+  filter: grayscale(90%) opacity(0.1);
+}
