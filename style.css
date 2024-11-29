@@ -1,3 +1,12 @@
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+</style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
+
+
+
 * {
   margin: 0x;
   padding: 5px;
@@ -5,15 +14,14 @@
 }
 
 body {
-  font-family: "Times New Roman", Times, serif;
-  background: linear-gradient(to bottom, #ffffff, #6dd5fa, #2980b9);
+  font-family: "Questrial", sans-serif;
+  background: #7dade0;
   font-size: 1, 3em;
 }
 
 img {
-  width: 500px;
-  height: 500px;
-  margin: 40px;
+  width: 400px;
+  margin: 10px;
   padding: 40px;
   box-sizing: border-box;
 }
@@ -43,7 +51,7 @@ header {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 2em;
-  background-color: #2726263f;
+  background-color: #171f203f;
 }
 
 .card div {
@@ -55,8 +63,8 @@ header {
 }
 
 .btn {
-  background-color: rgb(72, 70, 68);
-  color: #ffffff;
+  background-color: #7dade0; 
+  color: #101216;
   padding: 10px 15px;
   display: inline-block;
   border-radius: 10px;
@@ -71,7 +79,7 @@ a {
 
 .btn:hover {
   background-color: black;
-  color: #2980b9;
+  color: #ffffff;
   box-shadow: 1px 1px 2px #000000;
 }
 
@@ -95,5 +103,5 @@ a {
 }
 
 .galeria:hover div:not(:hover) {
-  filter: grayscale(90%) opacity(0.1);
+  filter: grayscale(100%) opacity(0.4);
 }
